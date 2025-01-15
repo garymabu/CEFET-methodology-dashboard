@@ -11,6 +11,7 @@ import {
 } from 'recharts';
 import dayjs from 'dayjs';
 import mocks from '../../mock/waterfall-mock.json';
+import { theme } from '@/app/style/customThemeProvider';
 
 const SCurveChart = () => {
     
@@ -23,8 +24,8 @@ const SCurveChart = () => {
   data.sort((a, b) => a.planned - b.planned);
 
   return (
-    <div style={{ width: 1000, height: 500, background: '#5e5587', padding: 5, borderRadius: 8, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-      <h2 style={{ textAlign: 'center', fontSize: '1.5rem' }}>Exemplo de Gráfico de Curva em S</h2>
+    <div style={{ width: 1000, height: 500, background: theme.colors.tableGray, padding: 5, borderRadius: 8, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+      <h2 style={{ textAlign: 'center', fontSize: '1.5rem', color: '#000' }}>Exemplo de Gráfico de Curva em S</h2>
       <ResponsiveContainer>
         <LineChart
           data={data}
@@ -34,23 +35,23 @@ const SCurveChart = () => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
             dataKey="name"
-            tick={{ fontSize: 12, fill: '#FFF' }}
+            tick={{ fontSize: 12, fill: '#000' }}
           />
           <YAxis
             domain={['auto', 'auto']}
             tickFormatter={(value: number) =>
               dayjs.unix(value).format('DD/MM/YYYY')
             }
-            tick={{ fontSize: 12, fill: '#FFF' }}
+            tick={{ fontSize: 12, fill: '#000' }}
           />
           <Tooltip
             formatter={(value: number) =>
               dayjs.unix(value).format('DD/MM/YYYY')
             }
-            contentStyle={{ color: '#FFF', backgroundColor: '#333' }}
-            labelStyle={{ color: '#FFF' }}
+            contentStyle={{ color: '#000', backgroundColor: '#333' }}
+            labelStyle={{ color: '#000' }}
           />
-          <Legend wrapperStyle={{ color: '#FFF' }} />
+          <Legend wrapperStyle={{ color: '#000' }} />
           <Line
             type="monotone"
             dataKey="planned"

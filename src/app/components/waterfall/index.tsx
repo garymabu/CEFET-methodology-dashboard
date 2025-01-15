@@ -2,6 +2,7 @@ import GanttGraph from './components/GanttGraph';
 import SCurveChart from './components/SCurveChart';
 import Table from '../common/Table/V1';
 import mock from './mock/waterfall-mock.json';
+import { theme } from '@/app/style/customThemeProvider';
 
 export default function Waterfall() {
   const formattedTableData = mock.map((task) => ({
@@ -20,8 +21,14 @@ export default function Waterfall() {
     { name: 'Data de Entrega Realizada', size: 2 },
   ];
 
+  console.log(formattedTableData);
+
   return (
     <>
+    <div style={{  width:1000, background: theme.colors.tableGray, borderRadius: 8, color: '#000', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '20px' }}>
+      <h2 style={{ textAlign: 'center', fontSize: '1.5rem', color: '#000' }}>Tarefas</h2>
+      <Table data={formattedTableData} headers={headers} />
+    </div>
       <GanttGraph />
       <SCurveChart />
     </>
