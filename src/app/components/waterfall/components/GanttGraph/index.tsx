@@ -2,6 +2,7 @@ import { Gantt, Task } from 'gantt-task-react';
 import mockData from '../../mock/waterfall-mock.json';
 import { ViewMode } from 'react-gantt-chart';
 import "gantt-task-react/dist/index.css";
+import { theme } from '@/app/style/customThemeProvider';
 
 const GanttGraph = () => {
 
@@ -18,8 +19,8 @@ const GanttGraph = () => {
     }));
 
     return (
-        <div style={{ width: 1000, padding: "20px", background: "#5e5587", borderRadius: 8, color: "#000", display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h2 style={{ textAlign: 'center', fontSize: '1.5rem', color: '#fff' }}>Exemplo de Gráfico de Gantt</h2>
+        <div style={{ width: 1000, padding: "20px", background: theme.colors.tableGray, borderRadius: 8, color: '#000', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <h2 style={{ textAlign: 'center', fontSize: '1.5rem', color: '#000' }}>Exemplo de Gráfico de Gantt</h2>
             <Gantt tasks={tasks} viewMode={ViewMode.Day} locale="pt-BR" />
         </div>
     );
