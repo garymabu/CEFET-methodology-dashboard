@@ -97,8 +97,9 @@
         "Categoria do status alterada": "03/set/24 12:55 AM",
         "Pai": 10033.0,
         "Parent summary": "Verificação de usuário",
-        "delivery_date": "2024-12-05",
-        "actual_delivery_date": "2024-12-06"
+        "initialize_date": "2024-12-02T09:00:00",
+        "delivery_date": "2024-12-05T18:00:00",
+        "actual_delivery_date": "2024-12-06T18:00:00"
     },
     {
         "Resumo": "Captcha",
@@ -198,8 +199,9 @@
         "Categoria do status alterada": "03/set/24 12:55 AM",
         "Pai": 10033.0,
         "Parent summary": "Verificação de usuário",
-        "delivery_date": "2024-12-11",
-        "actual_delivery_date": "2024-12-12"
+        "initialize_date": "2024-12-09T09:00:00",
+        "delivery_date": "2024-12-11T18:00:00",
+        "actual_delivery_date": "2024-12-12T18:00:00"
     },
     {
         "Resumo": " Autenticação de dois fatores",
@@ -299,8 +301,9 @@
         "Categoria do status alterada": "13/dez/24 6:40 AM",
         "Pai": 10033.0,
         "Parent summary": "Verificação de usuário",
-        "delivery_date": "2024-12-12",
-        "actual_delivery_date": "2024-12-13"
+        "initialize_date": "2024-12-13T09:00:00",
+        "delivery_date": "2024-12-16T18:00:00",
+        "actual_delivery_date": "2024-12-16T18:00:00"
     },
     {
         "Resumo": "Completude de perfil para verificação de conta",
@@ -328,7 +331,7 @@
         "Resolvido": null,
         "Data limite": null,
         "Votos": 0,
-        "Pontuacao": 2,
+        "Pontuacao": 1,
         "Descrição": "Eu *como* usuário *desejo* poder completar a etapa de completude de perfil *para que* eu possa verificar minha conta no We Riot\n\n\n\nCritérios de aceite:\n\n\n\n*Dado que* estou logado como usuário e já possuo todos os campos do meu perfil preenchidos\n\n*Quando* eu acessar a página de verificação de perfil\n\n*Então* a etapa de completude de perfil já estará completa\n\n\n\n*Dado que* estou logado como usuário e não possuo todos os campos do meu perfil preenchidos\n\n*Quando* eu acessar a página de verificação de perfil\n\n*Então* verei que a etapa de completude de perfil não estará completa\n\n\n\n*Dado que* estou logado como usuário e não possuo todos os campos do meu perfil preenchidos\n\n*Quando* eu clicar na etapa de completude de perfil na página de verificação de perfil\n\n*Então* serei direcionado para a página de edição de perfil, onde todos os campos em branco estarão marcados",
         "Ambiente": null,
         "Seguidores": "Pedro Yuan",
@@ -400,8 +403,9 @@
         "Categoria do status alterada": "17/dez/24 6:40 AM",
         "Pai": 10033.0,
         "Parent summary": "Verificação de usuário",
-        "delivery_date": "2024-12-17",
-        "actual_delivery_date": "2024-12-17"
+        "initialize_date": "2024-12-17T09:00:00",
+        "delivery_date": "2024-12-17T18:00:00",
+        "actual_delivery_date": "2024-12-17T18:00:00"
     },
     {
         "Resumo": "Página de verificação de perfil",
@@ -501,8 +505,9 @@
         "Categoria do status alterada": "18/dez/24 6:40 PM",
         "Pai": 10033.0,
         "Parent summary": "Verificação de usuário",
-        "delivery_date": "2024-12-18",
-        "actual_delivery_date": "2024-12-18"
+        "initialize_date": "2024-12-18T09:00:00",
+        "delivery_date": "2024-12-18T18:00:00",
+        "actual_delivery_date": "2024-12-18T18:00:00"
     },
     {
         "Resumo": "Pop-up de perfil ao clicar em avatar (Não passar)",
@@ -602,8 +607,9 @@
         "Categoria do status alterada": "20/dez/24 6:36 AM",
         "Pai": 10032.0,
         "Parent summary": "Visão de avatar em manifestação",
-        "delivery_date": "2024-12-20",
-        "actual_delivery_date": "2024-12-20"
+        "initialize_date": "2024-12-19T09:00:00",
+        "delivery_date": "2024-12-20T18:00:00",
+        "actual_delivery_date": "2024-12-20T18:00:00"
     },
     {
         "Resumo": "Interface de avatares em manifestação (Não passar)",
@@ -703,8 +709,9 @@
         "Categoria do status alterada": "24/dez/24 6:36 AM",
         "Pai": 10032.0,
         "Parent summary": "Visão de avatar em manifestação",
-        "delivery_date": "2024-12-24",
-        "actual_delivery_date": "2024-12-24"
+        "initialize_date": "2024-12-23T09:00:00",
+        "delivery_date": "2024-12-24T18:00:00",
+        "actual_delivery_date": "2024-12-24T18:00:00"
     },
     {
         "Resumo": "Visualização de perguntas e respostas (Não passar)",
@@ -804,8 +811,9 @@
         "Categoria do status alterada": "25/dez/24 6:35 PM",
         "Pai": 10031.0,
         "Parent summary": "Usabilidade de questionamento",
-        "delivery_date": "2024-12-25",
-        "actual_delivery_date": "2024-12-25"
+        "initialize_date": "2024-12-25T09:00:00",
+        "delivery_date": "2024-12-25T18:00:00",
+        "actual_delivery_date": "2024-12-25T18:00:00"
     },
     {
         "Resumo": "Resposta de perguntas (Não passar)",
@@ -905,8 +913,9 @@
         "Categoria do status alterada": "27/dez/24 6:35 PM",
         "Pai": 10031.0,
         "Parent summary": "Usabilidade de questionamento",
-        "delivery_date": "2024-12-26",
-        "actual_delivery_date": "2024-12-26"
+        "initialize_date": "2024-12-26T09:00:00",
+        "delivery_date": "2024-12-26T18:00:00",
+        "actual_delivery_date": "2024-12-26T18:00:00"
     },
     {
         "Resumo": "Envio de perguntas (Não passar)",
@@ -1006,8 +1015,9 @@
         "Categoria do status alterada": "30/dez/24 12:51 AM",
         "Pai": 10031.0,
         "Parent summary": "Usabilidade de questionamento",
-        "delivery_date": "2024-12-30",
-        "actual_delivery_date": "2024-12-30"
+        "initialize_date": "2024-12-27T09:00:00",
+        "delivery_date": "2024-12-30T18:00:00",
+        "actual_delivery_date": "2024-12-30T18:00:00"
     },
     {
         "Resumo": "Estatísticas de manifestação (Parcial)",
@@ -1107,7 +1117,8 @@
         "Categoria do status alterada": "31/dez/24 12:51 AM",
         "Pai": 10030.0,
         "Parent summary": "Criação de manifestação",
-        "delivery_date": "2024-12-31",
-        "actual_delivery_date": "2024-12-31"
+        "initialize_date": "2024-12-31T09:00:00",
+        "delivery_date": "2024-12-31T18:00:00",
+        "actual_delivery_date": "2024-12-31T18:00:00"
     }
 ]

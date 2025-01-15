@@ -10,7 +10,7 @@ const GanttGraph = () => {
     .map((item, index) => ({
       id: `task-${index + 1}`,
       name: item.Resumo || `Task ${index + 1}`,
-      start: new Date(item.delivery_date),
+      start: new Date(item.initialize_date),
       end: new Date(item.actual_delivery_date),
       progress: item.Pontuacao ? Math.min(item.Pontuacao * 10, 100) : 0,
       dependencies: [],
@@ -18,8 +18,8 @@ const GanttGraph = () => {
     }));
 
     return (
-        <div style={{ padding: "20px", background: "#222", color: "#fff" }}>
-            <h2>Exemplo de Gráfico de Gantt</h2>
+        <div style={{ width: 1000, padding: "20px", background: "#5e5587", borderRadius: 8, color: "#000", display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <h2 style={{ textAlign: 'center', fontSize: '1.5rem', color: '#fff' }}>Exemplo de Gráfico de Gantt</h2>
             <Gantt tasks={tasks} viewMode={ViewMode.Day} locale="pt-BR" />
         </div>
     );
