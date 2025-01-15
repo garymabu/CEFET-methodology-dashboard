@@ -1,8 +1,9 @@
 import 'styled-components';
-import { theme } from './withCustomTheme';
+import { theme } from './customThemeProvider';
 
 type Theme = typeof theme;
 
 declare module 'styled-components' {
+
   export type DefaultTheme = Theme
 }

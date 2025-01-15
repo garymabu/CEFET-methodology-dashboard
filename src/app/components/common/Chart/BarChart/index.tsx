@@ -1,6 +1,12 @@
-import React from 'react';
-import { BarLayer, BarLegendProps, ComputedDatum, ResponsiveBar } from '@nivo/bar';
-import { Tooltip } from './interface';
+import React from "react";
+import {
+  BarLayer,
+  BarLegendProps,
+  ComputedDatum,
+  ResponsiveBar,
+} from "@nivo/bar";
+import { Tooltip } from "./interface";
+import { AxisProps } from "@nivo/axes";
 
 interface IBar {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -11,20 +17,22 @@ interface IBar {
   margin?: object;
   padding?: number;
   innerPadding?: number;
-  layout?: 'vertical' | 'horizontal';
+  layout?: "vertical" | "horizontal";
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   colors?: any;
   legends?: BarLegendProps[];
-  groupMode?: 'grouped' | 'stacked';
+  groupMode?: "grouped" | "stacked";
   animate?: boolean;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   tooltip?: Tooltip;
   enableLabel?: boolean;
-  axisBottom?: object;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  label?: (val: ComputedDatum<any>)=>string;
+  axisBottom?: AxisProps<any> | null | undefined;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  layers?: (BarLayer<any>)[];
+  label?: (val: ComputedDatum<any>) => string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  layers?: BarLayer<any>[];
+  theme?: object;
 }
 export const BarChart: React.FC<IBar> = (props) => {
   const {
@@ -44,6 +52,7 @@ export const BarChart: React.FC<IBar> = (props) => {
     enableLabel,
     label,
     layers,
+    theme,
   } = props;
 
   return (
@@ -55,7 +64,7 @@ export const BarChart: React.FC<IBar> = (props) => {
       margin={margin}
       padding={padding}
       innerPadding={innerPadding}
-      axisBottom= {axisBottom}
+      axisBottom={axisBottom}
       groupMode={groupMode}
       animate={animate}
       tooltip={tooltip}
@@ -64,6 +73,7 @@ export const BarChart: React.FC<IBar> = (props) => {
       colors={colors}
       legends={legends}
       layers={layers}
+      theme={theme}
     />
   );
 };

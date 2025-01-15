@@ -20,6 +20,8 @@ export const commonColors = {
   tableCellGray: '#4D4F5C',
   gray: '#0000008A',
   lightBlack: '#162F44',
+
+  lightPurple: '#5e5587'
 };
 
 export const chartColors = {
