@@ -11,7 +11,7 @@ const fontSizes = {
   tableBody: '22px',
   button: '14px',
   bigTitle: '26px',
-  inputSize: '14px',
+  inputSize: '32px',
   tinyBody: '11px',
 };
 

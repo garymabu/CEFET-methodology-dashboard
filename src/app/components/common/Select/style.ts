@@ -10,6 +10,7 @@ export const SelectLabel = styled(Form.Label)`
 
 export const StyledSelect = styled(Form.Select)`
   color: ${(props) => props.theme.colors.black};
+  font-size: ${(props) => props.theme.sizes.fontSizes.inputSize};
 `;
 
 export const SelectFeedback = styled(Form.Control.Feedback)``;
